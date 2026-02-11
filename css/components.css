@@ -1,0 +1,40 @@
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+.stat-card {
+  padding: 24px;
+}
+
+.stat-card p {
+  color: var(--text-muted);
+}
+
+.stat-card h2 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+.panel {
+  padding: 24px;
+}
+
+.panel h3 {
+  margin-bottom: 20px;
+  color: var(--blue-light);
+}
+
+.chart-container {
+  height: 300px;
+  position: relative;
+}
+
+.filter {
+  padding: 10px 16px;
+  color: var(--text-main);
+  background: transparent;
+  border-radius: 10px;
+}
