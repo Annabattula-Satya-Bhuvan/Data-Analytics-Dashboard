@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Analytics Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <main class="dashboard">
+
+    <header class="header">
+      <div>
+        <h1>Analytics Dashboard</h1>
+        <p>Performance & Data Insights</p>
+      </div>
+
+      <select id="filterSelect" class="glass filter">
+        <option value="monthly">Monthly</option>
+        <option value="weekly">Weekly</option>
+      </select>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats-grid">
+      <div class="stat-card glass">
+        <p>Total Users</p>
+        <h2 id="usersCount">0</h2>
+      </div>
+      <div class="stat-card glass">
+        <p>Total Revenue</p>
+        <h2 id="revenueCount">$0</h2>
+      </div>
+      <div class="stat-card glass">
+        <p>Conversion Rate</p>
+        <h2>4.8%</h2>
+      </div>
+      <div class="stat-card glass">
+        <p>Bounce Rate</p>
+        <h2>32%</h2>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="charts-grid">
+
+      <div class="panel glass">
+        <h3>Revenue Growth</h3>
+        <div class="chart-container">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+
+      <div class="panel glass">
+        <h3>User Distribution</h3>
+        <div class="chart-container">
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
